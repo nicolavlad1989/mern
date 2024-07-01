@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 export default function Header() {
   return (
     <div className='bg-slate-200'>
-        <div className='flex justify-between items-center max-w-6xl ms-auto p-3'>
+        <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
             <Link to='/home'>
             <h1 className='font-bold'>Auth App</h1>
             </Link>
@@ -24,3 +24,4 @@ export default function Header() {
     </div>
   )
 }
+// create the headers components
