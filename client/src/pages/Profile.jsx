@@ -50,7 +50,7 @@ export default function Profile() {
       request.resource.size < 2 * 1024 * 1024 && 
       request.resource.contentType.matches('image/.*') */}
 
-        <img src={currentUser.profilePicture} alt="profile"  className='h-24 w-24 rounded-full object-cover self-center cursor-pointer mt-2' onClick={() => fileRef.current.click()}/>
+        <img src={form.Data.profilePicture || currentUser.profilePicture} alt="profile"  className='h-24 w-24 rounded-full object-cover self-center cursor-pointer mt-2' onClick={() => fileRef.current.click()}/>
 
         <p className='text-sm self-center'>
           {imageError ? (
