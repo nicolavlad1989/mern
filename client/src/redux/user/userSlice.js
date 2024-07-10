@@ -21,7 +21,7 @@ const userSlice = createSlice({
             state.error = false;
         },
 
-        signInFailure: (state) => {
+        signInFailure: (state, action) => {
             state.loading = false;
             state.error = action.payload;
         },
@@ -36,7 +36,7 @@ const userSlice = createSlice({
             state.currentUser = action.payload;
         },
 
-        updateUserFailure: (state) => {
+        updateUserFailure: (state, action) => {
             state.loading = false;
             state.error = action.payload;
         },
@@ -50,7 +50,7 @@ const userSlice = createSlice({
             state.currentUser = null;
         },
 
-        deleteUserFailure: (state) => {
+        deleteUserFailure: (state, action) => {
             state.loading = false;
             state.error = action.payload;
         },
