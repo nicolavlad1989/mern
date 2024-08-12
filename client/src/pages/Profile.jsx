@@ -63,12 +63,6 @@ export default function Profile() {
       return;
     }
     dispatch(updateUserSuccess(data));
-    this.setState(prevState => {
-      let user = Object.assign({}, prevState.user);  // creating copy of state variable jasper
-      user.username = 'VLAD';                     // update the name property, assign a new value                 
-      return { user };                                 // return new object jasper object
-    })
-    this.setState({...this.state.currentUser, username: 'VLAD'});
     setUpdateSuccess(true);
 
   } catch (error) {
